@@ -97,6 +97,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  color:#fff;
 }
 .banner .button:hover {
     color: #000;
@@ -115,62 +116,26 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     transition: 0.5s;
     z-index: -1;
 }
-.banner .button:hover img {
-    filter: brightness(0) invert(0);
+.banner .button:hover img{
+  filter: brightness(0) invert(0);
 }
 .banner .button:hover:after{
-    box-shadow:none;
-    right: 0;
-    width: 100%;
+  box-shadow:none;
+  right:0;
+  width:100%;
 }
-.banner .color-scheme-3{
-  color: #000;
+.banner .banner__box.content-container {
+  color:#000;
 }
-.banner .banner__heading {
-    font-size: 70px;
-    font-weight: 500;
-    line-height: 70px;
+.banner .banner__heading{
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
 }
 .banner .banner__box .banner__heading+* {
-    margin: 30px 0px;
+  margin:30px 0px;
 }
-.banner .banner__text {
-    max-width: 430px;
-    text-align: left;
-}
-.banner .banner__text p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-}
-.tv-strip {
-    font-family: Jost;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 13.42px;
-    text-align: center;
-    padding: 14px 0;
-    background-color: #F5F5F5;
-}
-.sec-title {
-    font-family: "Lustria", serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 43.2px;
-    margin: 0px;
-}
-.mxt-90{
-  margin-top: 90px;
-}
-.tv-product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 18px;
-    margin: 30px 0;
-}
-.tv-product-item {
-    width: calc(33.333% - 13px);
-    line-height: 0;
-    position: relative;
+.banner .banner__text{
+  max-width: 430px;
+  text-align: left;
 }
