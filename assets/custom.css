@@ -13,7 +13,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, a
   position:sticky;
   top:0;
 }
-.tv-containter
+.tv-container
 {
   max-width:1440px;
   margin:0 auto;
@@ -22,4 +22,9 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, a
   align-items:center;
   justify-content:space-between;
 }
+.tv-container a
+{
+  display:inline-block
+}
+
 
