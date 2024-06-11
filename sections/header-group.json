@@ -36,11 +36,21 @@
             "tag_content": "Find the ideal gift for your loved ones.",
             "content_size": 12
           }
+        },
+        "button_TTCVaB": {
+          "type": "button",
+          "settings": {
+            "button_text": "CHOOSE GIFT",
+            "button_url": "#",
+            "button_icon": "shopify:\/\/shop_images\/tv-arrow.svg",
+            "icon_width": 26
+          }
         }
       },
       "block_order": [
         "logo_gAUtQC",
-        "text_YNK7m4"
+        "text_YNK7m4",
+        "button_TTCVaB"
       ],
       "settings": {
         "sticky_header_type": "on-scroll-up",
