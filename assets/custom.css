@@ -126,3 +126,8 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .banner .banner__box.content-container {
   color:#000;
 }
+.banner .banner__heading{
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
+}
