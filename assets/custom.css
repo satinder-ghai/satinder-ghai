@@ -131,3 +131,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
   font-weight: 500;
   line-height: 70px;
 }
+.banner .banner__box .banner__heading+* {
+  margin:30px 0px;
+}
