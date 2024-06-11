@@ -136,5 +136,5 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 }
 .banner .banner__text{
   max-width: 430px;
-    text-align: left;
+  text-align: left;
 }
