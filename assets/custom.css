@@ -62,34 +62,44 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-btn:hover{
   color:#fff;
 }
-.tv-btn:hover:after{
-  right:0;
-  width:100%;
+.tv-btn:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    display: block;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+    width: 0;
 }
-.tv-btn:hover img{
+.tv-btn:hover:after{
+   right: 0;
+   width: 100%;
+}
+.tv-btn:hover img {
   filter: brightness(0) invert(1);
 }
-.banner .tvs-containter
-{
+.banner .tvs-container {
   padding-left:0px;
   padding-right:0px;
 }
-.banner .button
-{
-  background-color:#000;
-  transition:0.5s;
-  z-index:1;
+.banner .button{
+  background-color: #000000;
+  transition: 0.5s;
+  z-index: 1;
   width: 220px;
   height: 50px;
   box-shadow:none;
   font-family: Jost;
   font-size: 16px;
   font-weight: 400;
-  text-transform:uppercase
+  text-transform: uppercase;
 }
-.banner .button:hover
-{
-  color:#000;
+.banner .button:hover {
+    color: #000;
 }
 .banner .button img {
   filter: brightness(0) invert(1);
@@ -101,7 +111,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color:#FFF544;
-    transition:0.5s;
+    background-color: #fff544;
+    transition: 0.5s;
     z-index: -1;
 }
