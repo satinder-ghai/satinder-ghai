@@ -177,6 +177,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     line-height: 0px;
     position: relative;
 }
-tv-product-item .product-image {
+.tv-product-item .product-image {
     width: 100%;
 }
