@@ -156,12 +156,98 @@
   ],
   "blocks": [
     {
-      "type": "@app"
+      "type": "Logo",
+      "name": "Website Logo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Website Logo"
+        },
+        {
+            "type": "range",
+            "id": "logo_width",
+            "min": 120,
+            "max": 220,
+            "step": 1,
+            "default": 120,
+            "unit": "px",
+            "label": "t:settings_schema.logo.settings.logo_width.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Header Tag Line",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "tag_content",
+          "default": "Find the ideal gift for your loved ones.",
+          "label": "Tag line Content"
+        },
+        {
+            "type": "range",
+            "id": "content_size",
+            "min": 12,
+            "max": 22,
+            "step": 1,
+            "default": 16,
+            "unit": "px",
+            "label": "Content Size"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Header Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "CHOOSE GIFT",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "button_icon",
+          "label": "Button Icon"
+        },
+        {
+            "type": "range",
+            "id": "icon_width",
+            "min": 15,
+            "max": 28,
+            "step": 1,
+            "default": 26,
+            "unit": "px",
+            "label": "Icon Width"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name":"Custom Header"
+      "name": "Header",
+      "blocks": [
+        {
+          "type": "Logo"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
     }
   ]
 }
