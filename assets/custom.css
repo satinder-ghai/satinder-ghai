@@ -62,3 +62,10 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-btn:hover{
   color:#fff;
 }
+.tv-btn:hover:after{
+  right:0;
+  width:100%;
+}
+.tv-btn:hover img{
+  filter: brightness(0) invert(1);
+}
