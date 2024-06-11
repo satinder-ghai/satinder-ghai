@@ -168,7 +168,9 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'footer' -%}
-              <div class="tv-strip"> SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL </div>
+            {%- if block.settings.banner_footer_bar != blank -%}
+              <div class="tv-strip"> {{  }} </div>
+            {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
 
