@@ -37,13 +37,17 @@
     {%- for block in section.blocks -%}
         {%- case block.type -%}
           {% when 'Logo' %}
-            {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
+            <a href="{{ shop.url }}">
+              {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
               {{ block.settings.logo | image_url: width: 600 | image_tag:
               class: 'header__heading-logo motion-reduce',
               width: block.settings.logo_width,
               alt: logo_alt,
               preload: true
-            }}
+              }}        
+            </a>
+
+            
           
         {%- endcase -%}
       {%- endfor -%}
