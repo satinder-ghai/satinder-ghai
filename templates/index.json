@@ -27,12 +27,19 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "footer_KmUrV8": {
+          "type": "footer",
+          "settings": {
+            "footer_bar": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+          }
         }
       },
       "block_order": [
         "heading",
         "text_9NGxgH",
-        "button"
+        "button",
+        "footer_KmUrV8"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_0f024add-281d-4cb4-9be3-602cd3861cb8.jpg",
