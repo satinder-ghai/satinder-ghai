@@ -6,3 +6,20 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, a
   font-family: "Jost", sans-serif;
   color:#000000
 }
+.tv-header
+{
+  line-height:0;
+  background:#fff;
+  position:sticky;
+  top:0;
+}
+.tv-containter
+{
+  max-width:1440px;
+  margin:0 auto;
+  padding:10px 0px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
