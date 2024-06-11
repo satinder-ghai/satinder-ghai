@@ -169,7 +169,7 @@
         {%- case block.type -%}
           {%- when 'footer' -%}
             {%- if block.settings.banner_footer_bar != blank -%}
-              <div class="tv-strip"> {{  }} </div>
+              <div class="tv-strip"> {{ block.settings.footer_bar }} </div>
             {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
