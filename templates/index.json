@@ -89,37 +89,61 @@
         "product_aeydkg": {
           "type": "product",
           "settings": {
-            "product": "black-leather-bag"
+            "product": "black-leather-bag",
+            "icon_top": 120,
+            "icon_right": 120,
+            "icon_bottom": 120,
+            "icon_left": 120
           }
         },
         "product_6eQNkm": {
           "type": "product",
           "settings": {
-            "product": "blue-silk-tuxedo"
+            "product": "blue-silk-tuxedo",
+            "icon_top": 120,
+            "icon_right": 120,
+            "icon_bottom": 120,
+            "icon_left": 120
           }
         },
         "product_XgKPcw": {
           "type": "product",
           "settings": {
-            "product": "chequered-red-shirt"
+            "product": "chequered-red-shirt",
+            "icon_top": 120,
+            "icon_right": 120,
+            "icon_bottom": 120,
+            "icon_left": 120
           }
         },
         "product_Tr3gwR": {
           "type": "product",
           "settings": {
-            "product": "classic-leather-jacket"
+            "product": "classic-leather-jacket",
+            "icon_top": 120,
+            "icon_right": 120,
+            "icon_bottom": 120,
+            "icon_left": 120
           }
         },
         "product_8U79ke": {
           "type": "product",
           "settings": {
-            "product": "classic-varsity-top"
+            "product": "classic-varsity-top",
+            "icon_top": 120,
+            "icon_right": 120,
+            "icon_bottom": 120,
+            "icon_left": 120
           }
         },
         "product_eWaNfR": {
           "type": "product",
           "settings": {
-            "product": "dark-denim-top"
+            "product": "dark-denim-top",
+            "icon_top": 120,
+            "icon_right": 120,
+            "icon_bottom": 120,
+            "icon_left": 120
           }
         }
       },
@@ -132,7 +156,7 @@
         "product_eWaNfR"
       ],
       "settings": {
-        "title": "Featured collection",
+        "title": "Tisso Vison in the wild",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
