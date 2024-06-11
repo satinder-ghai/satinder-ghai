@@ -52,7 +52,7 @@
           {%- when 'text' -%}
              <div class="tvh-txt" {{ block.shopify_attributes }} style="font-size:{{ block.settings.content_size }}px"> {{ block.settings.tag_content }} </div>
           {%- when 'button' -%}
-             <a href="{{ block.settings.button_link }}" class="tv-btn"></a>
+             <a href="{{ block.settings.button_link }}" class="tv-btn">{{ block.settings.button_text }}</a>
         {%- endcase -%}
       {%- endfor -%}
   </div>
