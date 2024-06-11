@@ -172,8 +172,7 @@
           "default": 120
         }
       ]
-    }
-    ,
+    },
     {
       "type": "text",
       "name": "Headline Tag",
@@ -183,6 +182,34 @@
           "type": "inline_richtext",
           "id": "tag_content",
           "label": "Tag Line Content"
+        },
+        {
+          "type": "range",
+          "id": "content_size",
+          "min": 12,
+          "max": 22,
+          "step": 1,
+          "unit": "px",
+          "label": "Content Size",
+          "default": 12
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Header Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "CHOOSE GIFT",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Link"
         },
         {
           "type": "range",
