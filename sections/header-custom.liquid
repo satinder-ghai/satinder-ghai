@@ -50,10 +50,8 @@
                 preload: true
               }}</a>
           {%- when 'text' -%}
-             <div class="tvh-txt" {{ block.shopify_attributes }}> {{ block.settings.tag_content }} </div>
-          {%- when 'button' -%}
-              <a href="{{ block.settings.button_link }}" class="tv-btn"> {{ block.settings.button_text }} {{ block.settings.button_icon | img_url: 'master' | img_tag: width: block.settings.icon_width,
-                alt: block.settings.button_icon.alt }} </a>
+             <div class="tvh-txt" {{ block.shopify_attributes }} style="font-size:{{ block.settings.content_size }}px"> {{ block.settings.tag_content }} </div>
+          
         {%- endcase -%}
       {%- endfor -%}
   </div>
