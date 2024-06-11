@@ -5,7 +5,7 @@
   <div class="tv-product-list">
 
     {%- for block in section.blocks -%}
-      {%- if block.settings.blocks -%}
+      {%- if block.settings.product -%}
         {% assign product = all_products[block.settings.product] %}
         {%- if product -%}
           <div class="tv-product-item product-item">
