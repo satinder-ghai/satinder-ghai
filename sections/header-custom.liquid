@@ -8,8 +8,9 @@
 
 </style>
 
+
 {%- style -%}
-  .header {
+  .custom-header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
 
@@ -25,38 +26,38 @@
   }
 
   @media screen and (min-width: 990px) {
-    .header {
+    .custom-header {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
 
-<header class="tv-header header--mobile-{{ section.settings.mobile_logo_position }}  color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <div class="tv-container">
+
+<header class="tv-header header--mobile-{{ section.settings.mobile_logo_position }} color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+  <div class="tv-container"> 
+    <img class="mm-icon" src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/hamburger-icon.svg?v=1717408683" alt="Hamburger icon">
     {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {% when 'Logo' %}
-            <a href="{{ shop.url }}">
-              {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
+          {%- when 'Logo' -%}
+              
+             <a href="{{ shop.url }}" class="logo"> 
+               {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
               {{ block.settings.logo | image_url: width: 600 | image_tag:
-              class: 'header__heading-logo motion-reduce',
-              width: block.settings.logo_width,
-              alt: logo_alt,
-              preload: true
-              }}        
-            </a>
-
-            
-          
+                class: 'header__heading-logo motion-reduce',
+                width: block.settings.logo_width,
+                alt: logo_alt,
+                preload: true
+              }}</a>
+          {%- when 'text' -%}
+             <div class="tvh-txt" {{ block.shopify_attributes }}> {{ block.settings.tag_content }} </div>
+          {%- when 'button' -%}
+              <a href="{{ block.settings.button_link }}" class="tv-btn"> {{ block.settings.button_text }} {{ block.settings.button_icon | img_url: 'master' | img_tag: width: block.settings.icon_width,
+                alt: block.settings.button_icon.alt }} </a>
         {%- endcase -%}
       {%- endfor -%}
-    <div class="tvh-txt"> Find the ideal gift for your loved ones.</div>
-    <a href="#" class="tv-btn">Choose Gift <img src="//satinder-ghai-test.myshopify.com/cdn/shop/files/store-logo.png?v=1717063745&amp;width=600"></a>
-  
   </div>
 </header>
-
 
 {% schema %}
 {
