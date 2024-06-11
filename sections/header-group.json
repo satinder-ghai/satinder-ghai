@@ -29,10 +29,18 @@
             "logo": "shopify:\/\/shop_images\/store-logo.png",
             "logo_width": 120
           }
+        },
+        "text_YNK7m4": {
+          "type": "text",
+          "settings": {
+            "tag_content": "Find the ideal gift for your loved ones.",
+            "content_size": 12
+          }
         }
       },
       "block_order": [
-        "logo_gAUtQC"
+        "logo_gAUtQC",
+        "text_YNK7m4"
       ],
       "settings": {
         "sticky_header_type": "on-scroll-up",
