@@ -36,7 +36,15 @@
   <div class="tv-container">
     {%- for block in section.blocks -%}
         {%- case block.type -%}
-        
+          {% when 'Logo' %}
+            {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
+              {{ block.settings.logo | image_url: width: 600 | image_tag:
+              class: 'header__heading-logo motion-reduce',
+              widths: block.settings.logo_width,
+              alt: logo_alt,
+              preload: true
+            }}
+          
         {%- endcase -%}
       {%- endfor -%}
     <a href="{{ shop.url }}"><img src="//satinder-ghai-test.myshopify.com/cdn/shop/files/store-logo.png?v=1717063745&amp;width=600" alt="Satinder-Ghai-Test"></a>
