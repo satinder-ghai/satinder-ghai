@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const optionsContainer = document.getElementById('options-container');
     //Clear existing content
       optionsContainer.innerHTML='';
+
+    options.forEach(options,index) = {
+
+      
+    }
       
 
     popup.classList.remove('hidden');
