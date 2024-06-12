@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
    // Product API call to get Product info
     document.querySelectorAll('.product-item a').forEach(item => {
       item.addEventListener('click',function(){
-        console.log("index, value"); // passes index + value back!
 
         const productId = this.getAttribute('data-product-id');
       const accessToken = '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';
