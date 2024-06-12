@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Show Popup 
 
   function openPopup(product) {
-    console.log(product);
+    console.log(product.title);
   }
   
    // Product API call to get Product info
