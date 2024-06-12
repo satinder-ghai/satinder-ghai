@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     
     addToCartButton.onclick = function() {
-        addToCart('hidden');
+        addToCart(variantID);
       };
 
     
