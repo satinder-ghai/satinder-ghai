@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
-
+  dbSizeButton.onclick = function() {
+    dropdownSize.classList.toggle('show'); 
+  };
   
 
   // Show Pupup
