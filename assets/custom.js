@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         quantity: 1
       },
       {
-        id: '41062315163710',
+        id: 41062315163710,
         quantity: 1
       })
     })
