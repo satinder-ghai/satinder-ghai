@@ -7,17 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const addToCartButton = document.getElementById('add-to-cart'); 
   
   const closeButton = document.querySelector('.popup .close');
-  const optionButton = document.querySelector('.dropdown-size .db-size');
 
 
   
 
   // Close Popup
   closeButton.onclick = function() {
-    popup.classList.add('hidden');
-  };
-
- optionButton.onclick = function() {
     popup.classList.add('hidden');
   };
 
