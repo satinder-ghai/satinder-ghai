@@ -1,3 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM fully loaded and parsed");
+    document.querySelectorAll('.product-item a').forEach(item, function (index, value) {
+      console.log(index, value); // passes index + value back!
+    });
 });
