@@ -9,7 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
    const addToCartButton = document.getElementById('add-to-cart');
    const closeButton = document.querySelector('.popup .close');
 
+   closeButton.onclick = function() {
+     popup.classList.add("hidden");
+   }
 
+  
+  
   // Show Popup 
 
   function openPopup(product) {
