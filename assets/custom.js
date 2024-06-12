@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
  
   
   const closeButton = document.querySelector('.popup .close');
-  const closeButton = document.querySelector('.popup .close');
 
 
   
