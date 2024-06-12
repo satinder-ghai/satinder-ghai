@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     popupProductImage.innerHTML = '<img src="'+product.image['src']+'"/>';
     popupDescription.innerHTML = product.body_html;
     popupPrice.textContent = '$' + product.variants['0'].price;
-    const variantID = product.variants['0'];
+    const variantID = product.variants['0'].id;
     console.log(variantID);
     // Extract option names and values
       const options = product.options;
