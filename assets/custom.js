@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const popupDescription = document.getElementById('popup-description');
   const popupPrice = document.getElementById('popup-price');
   const addToCartButton = document.getElementById('add-to-cart');
-  const sizeOptions = document.getElementById('size-options');
+  const sizeOptions = document.querySelector('size-options');
  
   
   const closeButton = document.querySelector('.popup .close');
@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Close Popup
   closeButton.onclick = function() {
     popup.classList.add('hidden');
+  };
+
+  sizeOptions.onclick = function() {
+    console.log("Show Options");
   };
 
   window.onclick = function(event) {
