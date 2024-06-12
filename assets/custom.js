@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         quantity: 1
       },
       {
-        id: variantId,
+        id: '41062315163710',
         quantity: 1
       })
     })
