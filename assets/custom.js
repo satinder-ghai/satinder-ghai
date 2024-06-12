@@ -75,8 +75,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  function addToCart(variantID) {
-    console.log(variantID)
+  function addToCart(variantId) {
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        id: variantId,
+        quantity: 1
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Added to cart!');
+      popup.classList.add('hidden');
+    })
+    .catch(error => {
+      console.error('Error adding to cart:', error);
+    });
   }
   
   document.querySelectorAll('.product-item a').forEach(item => {
