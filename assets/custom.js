@@ -18,9 +18,17 @@ document.addEventListener("DOMContentLoaded", function() {
   // Show Popup 
 
   function openPopup(product) {
-    console.log(product.title);
+
+    popupTitle.textContent = product.title;
+  
+
+
+    
     popup.classList.remove('hidden');
   }
+
+
+
   
    // Product API call to get Product info
     document.querySelectorAll('.product-item a').forEach(item => {
