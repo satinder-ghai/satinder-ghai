@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     popupProductImage.innerHTML = '<img src="'+product.image['src']+'"/>';
     popupDescription.innerHTML = product.body_html;
     popupPrice.textContent = '$' + product.variants['0'].price;
+    const variantID = product.variants['0'];
+    console.log(variantID);
     // Extract option names and values
       const options = product.options;
       const optionsContainer = document.getElementById('options-container');
@@ -62,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Append the option container to the main container
         optionsContainer.appendChild(optionContainer);
       });
-      
+    
     addToCartButton.onclick = function() {
         addToCart('hidden');
       };
