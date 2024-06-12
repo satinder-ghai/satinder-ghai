@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Extract option names and values
       const options = product.options;
       const optionsContainer = document.getElementById('options-container');
+    //Clear existing content
+      optionsContainer.innerHTML='';
       
 
     popup.classList.remove('hidden');
