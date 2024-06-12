@@ -84,6 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
       body: JSON.stringify({
         id: variantId,
         quantity: 1
+      },
+      {
+        id: variantId,
+        quantity: 1
       })
     })
     .then(response => response.json())
@@ -116,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
           openPopup(data.product);
-          //console.log(data.product);
+          console.log(data.product);
         })
         .catch(error => {
           console.error('Error fetching product:', error);
