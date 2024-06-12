@@ -76,19 +76,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   function addToCart(variantId) {
+
+    let formData = {
+     'items': [{
+      'id': 41062314770494,
+      'quantity': 2
+      },{
+      'id': 41062315163710,
+      'quantity': 1
+      }]
+    };
+    
     fetch('/cart/add.js', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        id: variantId,
-        quantity: 1
-      },
-      {
-        id: 41062315163710,
-        quantity: 1
-      })
+      body: JSON.stringify(formData)
     })
     .then(response => response.json())
     .then(data => {
