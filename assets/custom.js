@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let formData = {
      'items': [{
       'id': variantId,
-      'quantity': 2
+      'quantity': 1
       },{
       'id': 41062315163710,
       'quantity': 1
