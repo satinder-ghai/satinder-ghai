@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+  // Variable Declarations
    const popup = document.getElementById('product-popup');
    const popupTitle = document.getElementById('product-title');
    const popupProductImage = document.getElementById('product-product-image');
