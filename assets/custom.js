@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
    const popup = document.getElementById('product-popup');
+   const popupTitle = document.getElementById('product-title');
+   const popupProductImage = document.getElementById('product-product-image');
+   const popupDescription = document.getElementById('product-description');
+   const popupPrice = document.getElementById('product-price');
+   const addToCartButton = document.getElementById('add-to-cart');
+   const closeButton = document.querySelector('.popup .close');
 
+  
    // Product API call to get Product info
     document.querySelectorAll('.product-item a').forEach(item => {
       item.addEventListener('click',function(){
