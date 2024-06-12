@@ -97,7 +97,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color:#fff;
+  color: #fff;
 }
 .banner .button:hover {
     color: #000;
@@ -116,54 +116,52 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     transition: 0.5s;
     z-index: -1;
 }
-.banner .button:hover img{
-  filter: brightness(0) invert(0);
+.banner .button:hover img {
+    filter: brightness(0) invert(0);
 }
 .banner .button:hover:after{
-  box-shadow:none;
-  right:0;
-  width:100%;
+    box-shadow:none;
+    right: 0;
+    width: 100%;
 }
-.banner .banner__box.content-container {
-  color:#000;
+.banner .color-scheme-3{
+  color: #000;
 }
-.banner .banner__heading{
-  font-size: 70px;
-  font-weight: 500;
-  line-height: 70px;
+.banner .banner__heading {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 70px;
 }
 .banner .banner__box .banner__heading+* {
-  margin:30px 0px;
+    margin: 30px 0px;
 }
-.banner .banner__text{
-  max-width: 430px;
-  text-align: left;
+.banner .banner__text {
+    max-width: 430px;
+    text-align: left;
 }
-.banner .banner__text p{
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
+.banner .banner__text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
 }
 .tv-strip {
-    background: #F5F5F5;
     font-family: Jost;
     font-size: 16px;
     font-weight: 400;
     line-height: 13.42px;
-    padding: 14px 0px;
     text-align: center;
+    padding: 14px 0;
+    background-color: #F5F5F5;
 }
-.sec-title
-{
-  font-family: "Lustria", serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 43.2px;
-  margin:0px
+.sec-title {
+    font-family: "Lustria", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.2px;
+    margin: 0px;
 }
-.mxt-90.tvs-container
-{
-  margin-top:90px;
+.mxt-90{
+  margin-top: 90px;
 }
 .tv-product-list {
     display: flex;
@@ -172,12 +170,13 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     gap: 18px;
     margin: 30px 0;
 }
-.tv-product-item.product-item {
-    width: 32%;
-    line-height: 0px;
+.tv-product-item {
+    width: calc(33.333% - 13px);
+    line-height: 0;
     position: relative;
 }
 .tv-product-item .product-image {
+    cursor: pointer;
     width: 100%;
 }
 .tv-product-item .plus-icon {
@@ -185,4 +184,20 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     position: absolute;
     top: 260px;
     right: 170px;
+}
+.tv-model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    background: #00000038;
+}
+.model-product-card {
+    width: 311px;
+    height: 447px;
+    background-color: #fff;
+    box-sizing: border-box;
 }
