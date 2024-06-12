@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(product);
     popupTitle.textContent = product.title;
     popupProductImage.innerHTML = '<img src="'+product.image['src']+'"/>';
+    popupDescription.innerHTML =product.body_html;
 
 
     
