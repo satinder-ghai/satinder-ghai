@@ -29,9 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
     //Clear existing content
       optionsContainer.innerHTML='';
 
-    options.forEach(options,index) = {
+    options.forEach((option, index) => {
 
-      // Create a container for each option
+         
+        
+        // Create a container for each option
         const optionContainer = document.createElement('div');
         optionContainer.className = 'popup-variants ' + option.name.toLowerCase().replace(/\s+/g, '-') +'-var';
 
@@ -40,8 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
         optionNameElement.className = 'cp-label' ;
         optionNameElement.textContent = `${option.name}`;
         optionContainer.appendChild(optionNameElement);
-      
-    }
+ 
+    
+          // Create a container for the first option
+          const varCon = document.createElement('div');
+          varCon.className = 'var-con';
+
+          option.values.forEach(value => {
+            const varBtn = document.createElement('button');
+            varBtn.className = `var-btn var-${value.toLowerCase().replace(/\s+/g, '-')}`;
+            varBtn.textContent = value;
+            varCon.appendChild(varBtn);
+          });
+
+          optionContainer.appendChild(varCon);
+        
+
+
+        
+        // Append the option container to the main container
+        optionsContainer.appendChild(optionContainer);
+      });
       
 
     popup.classList.remove('hidden');
