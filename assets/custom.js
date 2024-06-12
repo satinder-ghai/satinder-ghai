@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const popupDescription = document.getElementById('popup-description');
   const popupPrice = document.getElementById('popup-price');
   const addToCartButton = document.getElementById('add-to-cart');
-  const sizeOptions = document.querySelector('size-options');
+  const sizeOptions = document.querySelector('#size-options');
  
   
   const closeButton = document.querySelector('.popup .close');
