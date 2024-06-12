@@ -63,7 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
         optionsContainer.appendChild(optionContainer);
       });
       
-
+    closeButton.onclick = function() {
+        addToCart('hidden');
+      };
     popup.classList.remove('hidden');
   }
 
