@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('.product-item a').forEach(item, function (index, value) {
-      console.log(index, value); // passes index + value back!
+    document.querySelectorAll('.product-item').forEach(item => {
+      console.log("index, value"); // passes index + value back!
     });
 });
