@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let formData = {
      'items': [{
-      'id': 41062314770494,
+      'id': variantId,
       'quantity': 2
       },{
       'id': 41062315163710,
