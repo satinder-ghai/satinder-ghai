@@ -53,8 +53,8 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     transition: .5s;
     z-index: 1;
     width: 207px;
-  text-decoration:none;
-  color:#000;
+    text-decoration:none;
+    color:#000;
 }
 .tv-btn img {
   margin-left:18px;
