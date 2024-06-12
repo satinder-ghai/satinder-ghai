@@ -25,10 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
 
-  // Close Popup
-  sizeOptions.onclick = function() {
-    popup.classList.add('hidden');
-  };
+  
 
   // Show Pupup
   function openPopup(product) {
