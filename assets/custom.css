@@ -275,7 +275,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-model .cp-image {
     width: 40%;
     line-height: 0;
-  float:left;
 }
 .tv-model .cp-image img {
     width: 100%;
@@ -286,14 +285,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-model .cp-disc {
     padding-left: 8px;
      width: 60%;
-  float:left;
-  font-family: Jost;
-font-size: 14px;
-font-weight: 300;
-line-height: 15.4px;
-letter-spacing: -0.01em;
-text-align: left;
-
 }
 .tv-model .cp-disc h2.cp-title {
     font-family: Jost;
@@ -408,4 +399,59 @@ text-align: left;
 
 .size-var {
     margin-bottom: 50px;
+}
+.size-var .sel-siz {
+    width: 100%;
+    height: 40.44px;
+    padding: 0 10px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    background-image: url(https://cdn.shopify.com/s/files/1/0578/3945/2222/files/sel-arrow.png?v=1717401650);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.size-var .sel-siz:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+.db-size {
+    border-radius: 0;
+    font-size: 14px;
+    position: relative;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    letter-spacing: -.02em;
+    align-items: center;
+    border: 1px solid;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 0;
+    height: 40px;
+    width: 100%;
+    background: none;
+}
+.db-size span {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid;
+}
+.db-size span img {
+    transition: 0.5s;
+}
+.db-size.rotate span img {
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+.dropdown-size {
+    position: relative;
 }
