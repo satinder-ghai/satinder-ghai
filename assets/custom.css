@@ -332,4 +332,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
   z-index: 1;
   overflow: hidden;
 }
-.var-white:focus
+.var-white:focus{
+  
+}
