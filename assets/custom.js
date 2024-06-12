@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function openPopup(product) {
     console.log(product.title);
+    popup.classList.remove('hidden');
   }
   
    // Product API call to get Product info
