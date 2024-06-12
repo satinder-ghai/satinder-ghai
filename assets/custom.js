@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Variable Declarations
    const popup = document.getElementById('product-popup');
-   const popupTitle = document.getElementById('product-title');
+   const popupTitle = document.getElementById('popup-title');
    const popupProductImage = document.getElementById('product-product-image');
    const popupDescription = document.getElementById('product-description');
    const popupPrice = document.getElementById('product-price');
