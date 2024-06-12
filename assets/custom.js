@@ -23,14 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
-  if (dbSizeButton && dropdownSize) {
+  
     dbSizeButton.onclick = function() {
       console.log("testing");
-      dropdownSize.classList.toggle('show');
     };
-  } else {
-    console.error('Elements with class .db-size or .dropdown-size not found.');
-  }
   
 
   // Show Pupup
