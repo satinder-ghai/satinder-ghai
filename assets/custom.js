@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
       item.addEventListener('click',function(){
         console.log("index, value"); // passes index + value back!
 
-        const productId = this.getAttribute('');
-      const accessToken = '';
+        const productId = this.getAttribute('data-product-id');
+      const accessToken = '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';
       
-        fetch(``, {
+        fetch(`https://satinder-ghai-test.myshopify.com/admin/api/2021-07/${productId}.json`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
