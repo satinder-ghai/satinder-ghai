@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     options.forEach(options,index) = {
 
+      // Create a container for each option
+        const optionContainer = document.createElement('div');
+        optionContainer.className = 'popup-variants ' + option.name.toLowerCase().replace(/\s+/g, '-') +'-var';
+
+        // Create option name element with class and value
+        const optionNameElement = document.createElement('div');
+        optionNameElement.className = 'cp-label' ;
+        optionNameElement.textContent = `${option.name}`;
+        optionContainer.appendChild(optionNameElement);
       
     }
       
