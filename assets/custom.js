@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const popupDescription = document.getElementById('popup-description');
   const popupPrice = document.getElementById('popup-price');
   const addToCartButton = document.getElementById('add-to-cart');
-  const sizeOptions = document.getElementById('size-options');
  
   
   const closeButton = document.querySelector('.popup .close');
@@ -24,12 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
       popup.classList.add('hidden');
     }
   };
-
-  // Show Dropdown Options
-  sizeOptions.onclick = function() {
-    
-  };
-
 
   // Show Pupup
   function openPopup(product) {
