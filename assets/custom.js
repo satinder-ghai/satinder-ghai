@@ -8,10 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const closeButton = document.querySelector('.popup .close');
 
-  const dbSizeButton = document.querySelector('.db-size');
-  const dropdownSize = document.querySelector('.db-options');
-  
-
   // Close Popup
   closeButton.onclick = function() {
     popup.classList.add('hidden');
@@ -22,13 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
       popup.classList.add('hidden');
     }
   };
-
   
-    dbSizeButton.onclick = function() {
-      console.log("testing");
-    };
-  
-
   // Show Pupup
   function openPopup(product) {
     popupTitle.textContent = product.title;
