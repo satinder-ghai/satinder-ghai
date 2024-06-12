@@ -1,25 +1,23 @@
 <div class="mxt-90 tvs-container">
   <h2 class="sec-title">
-    Tisso vison in the wild
+      {{ section.settings.title }}
   </h2>
   <div class="tv-product-list">
-
-    {%- for block in section.blocks -%}
-      {%- if block.settings.product -%}
-        {% assign product = all_products[block.settings.product] %}
-        {%- if product -%}
-          <div class="tv-product-item product-item">
-            <img class="product-image" src="{{ product.featured_image | img_url: '434*444' }}" alt="{{ product.title }}">
-            <a href="#" class="plus-icon">
-              <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/plus-icon_430x.svg?v=1717157287#" alt="plus icon">
-            </a>
-          </div>
-        {%- endif -%}
-      {%- endif -%}
-    {%- endfor -%}
-  </div>  
+      {% for block in section.blocks %}
+        {% if block.settings.product %}
+            {% assign product = all_products[block.settings.product] %}
+            {% if product %}
+              <div class="tv-product-item product-item" data-product-id="{{ product.id }}">
+                 <img class="product-image" src="{{ product.featured_image | img_url: '434x444' }}" alt="{{ product.title }}">
+                <a href="#" class="plus-icon">
+                  <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/plus-icon.svg?v=1717157287" alt="plus icon">
+                </a>
+              </div>
+            {% endif %}
+        {% endif %}  
+      {% endfor %}
+  </div>
 </div>
-
 
 
 {% schema %}
