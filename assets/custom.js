@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const addToCartButton = document.getElementById('add-to-cart');
   const closeButton = document.querySelector('.popup .close');
 
+
+  // Close Popup
   closeButton.onclick = function() {
     popup.classList.add('hidden');
   };
@@ -17,23 +19,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
-
-  //Show Popup
+  // Show Pupup
   function openPopup(product) {
     popupTitle.textContent = product.title;
     popupProductImage.innerHTML = '<img src="'+product.image['src']+'"/>';
     popupDescription.innerHTML = product.body_html;
     popupPrice.textContent = '$' + product.variants['0'].price;
     const variantID = product.variants['0'].id;
-    console.log(variantID);
     // Extract option names and values
       const options = product.options;
       const optionsContainer = document.getElementById('options-container');
-    //Clear existing content
-      optionsContainer.innerHTML='';
+      // Clear existing content
+        optionsContainer.innerHTML = '';
+    
+      options.forEach((option, index) => {
 
-    options.forEach((option, index) => {
-
+         
+        
         // Create a container for each option
         const optionContainer = document.createElement('div');
         optionContainer.className = 'popup-variants ' + option.name.toLowerCase().replace(/\s+/g, '-') +'-var';
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         optionNameElement.textContent = `${option.name}`;
         optionContainer.appendChild(optionNameElement);
  
-    
+         if (index === 0) {
           // Create a container for the first option
           const varCon = document.createElement('div');
           varCon.className = 'var-con';
@@ -57,23 +59,42 @@ document.addEventListener('DOMContentLoaded', function() {
           });
 
           optionContainer.appendChild(varCon);
-        
+        }
+         else if (index === 1) {
+          // Create a container for the second option
+          const dropdownSize = document.createElement('div');
+          dropdownSize.className = 'dropdown-size';
+
+          const dbSizeButton = document.createElement('button');
+          dbSizeButton.className = 'db-size';
+          dbSizeButton.textContent = 'Choose your size';
+          dropdownSize.appendChild(dbSizeButton);
+
+          const dbOptions = document.createElement('ul');
+          dbOptions.className = 'db-options';
+
+          option.values.forEach(value => {
+            const dbOptionItem = document.createElement('li');
+            dbOptionItem.textContent = value;
+            dbOptions.appendChild(dbOptionItem);
+          });
+
+           dropdownSize.appendChild(dbOptions);
+          optionContainer.appendChild(dropdownSize);
+        } 
 
 
         
         // Append the option container to the main container
         optionsContainer.appendChild(optionContainer);
       });
-    
-    addToCartButton.onclick = function() {
-        addToCart(variantID);
-      };
 
-    
+    addToCartButton.onclick = function() {
+            addToCart(variantID);
+    };
+
     popup.classList.remove('hidden');
   }
-
-
 
   function addToCart(variantId) {
 
@@ -103,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Error adding to cart:', error);
     });
   }
-  
+
   document.querySelectorAll('.product-item a').forEach(item => {
     item.addEventListener('click', function() {
       const productId = this.getAttribute('data-product-id');
