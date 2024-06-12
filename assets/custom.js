@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (dbSizeButton && dropdownSize) {
     dbSizeButton.onclick = function() {
+      console.log("testing");
       dropdownSize.classList.toggle('show');
     };
   } else {
