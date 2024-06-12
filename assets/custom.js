@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Variable Declarations
    const popup = document.getElementById('product-popup');
    const popupTitle = document.getElementById('popup-title');
-   const popupProductImage = document.getElementById('product-product-image');
+   const popupProductImage = document.getElementById('popup-product-image');
    const popupDescription = document.getElementById('product-description');
    const popupPrice = document.getElementById('product-price');
    const addToCartButton = document.getElementById('add-to-cart');
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function openPopup(product) {
 
     popupTitle.textContent = product.title;
-    //popupProductImage.innerHTML = product.image['src'];
+    popupProductImage.innerHTML = product.image['src'];
 
 
     
