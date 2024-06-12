@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+   const popup = document.getElementById('product-popup');
+
+   // Product API call to get Product info
     document.querySelectorAll('.product-item a').forEach(item => {
       item.addEventListener('click',function(){
         console.log("index, value"); // passes index + value back!
