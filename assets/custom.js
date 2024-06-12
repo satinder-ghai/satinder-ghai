@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     popup.classList.add('hidden');
   };
 
-  sizeOptions.onclick = function() {
-    console.log("Show Options");
-  };
+
 
   window.onclick = function(event) {
     if (event.target === popup) {
