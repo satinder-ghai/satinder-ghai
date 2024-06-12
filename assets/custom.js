@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
+  //Show Popup
   function openPopup(product) {
     popupTitle.textContent = product.title;
     popupProductImage.innerHTML = '<img src="'+product.image['src']+'"/>';
