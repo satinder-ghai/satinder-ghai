@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Close Popup
   sizeOptions.onclick = function() {
-    console.log("Show OPtions ");
+    popup.classList.add('hidden');
   };
 
   // Show Pupup
