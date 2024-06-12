@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
    const addToCartButton = document.getElementById('add-to-cart');
    const closeButton = document.querySelector('.popup .close');
 
+
+  // Show Popup 
+
+  function openPopup(product) {
+    console.log(data.product);
+  }
   
    // Product API call to get Product info
     document.querySelectorAll('.product-item a').forEach(item => {
@@ -32,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
             return response.json();
           })
           .then(data => {
-            console.log(data.product);
+            openPopup(data.product);
+            //console.log(data.product);
           })
           .catch(error => {
             console.error('Error fetching product:', error);
