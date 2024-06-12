@@ -275,7 +275,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-model .cp-image {
     width: 40%;
     line-height: 0;
-  float:left;
 }
 .tv-model .cp-image img {
     width: 100%;
@@ -286,7 +285,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-model .cp-disc {
     padding-left: 8px;
      width: 60%;
-    float:left;
 }
 .tv-model .cp-disc h2.cp-title {
     font-family: Jost;
@@ -372,11 +370,33 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
   transform: translate(0);
 }
 
-.cp-desc {
-    ont-family: Jost;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 15.4px;
-    letter-spacing: -0.01em;
-    text-align: left;
+.var-black:before, .var-black:after {
+    content: "";
+    height: 100%;
+    width: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    background: #000;
+    top: 0;
+    transition:0.5s;
+     z-index:-1;
+}
+.var-black:after {
+    width: 100%;
+    left: 0;
+    background: #000;
+    top: 0;
+    transition: .5s;
+    transform: translate(-100%);
+}
+.var-black:focus:after {
+  transform: translate(0);
+}
+.tv-model .tv-btn{
+    width: 100%;
+}
+
+.size-var {
+    margin-bottom: 50px;
 }
