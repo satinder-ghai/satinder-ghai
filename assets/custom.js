@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
+
   //Show Popup
   function openPopup(product) {
     popupTitle.textContent = product.title;
@@ -31,8 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     options.forEach((option, index) => {
 
-         
-        
         // Create a container for each option
         const optionContainer = document.createElement('div');
         optionContainer.className = 'popup-variants ' + option.name.toLowerCase().replace(/\s+/g, '-') +'-var';
@@ -69,6 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
+
+  function addToCart(variantID) {
+    console.log(variantID)
+  }
+  
   document.querySelectorAll('.product-item a').forEach(item => {
     item.addEventListener('click', function() {
       const productId = this.getAttribute('data-product-id');
