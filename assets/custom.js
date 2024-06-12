@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Show Dropdown Options
   sizeOptions.onclick = function() {
-    console.log("Size Options");
+    
   };
 
 
