@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     popup.classList.add('hidden');
   };
 
-
+ optionButton.onclick = function() {
+    popup.classList.add('hidden');
+  };
 
   window.onclick = function(event) {
     if (event.target === popup) {
