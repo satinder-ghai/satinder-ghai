@@ -182,8 +182,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-product-item .plus-icon {
     width: 22px;
     position: absolute;
-    top: 260px;
-    right: 170px;
 }
 .tv-model {
     position: fixed;
@@ -200,4 +198,8 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     height: 447px;
     background-color: #fff;
     box-sizing: border-box;
+}
+.tv-product-item:first-child .plus-icon{
+    top: 260px;
+    right: 170px;
 }
