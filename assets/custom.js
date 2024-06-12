@@ -25,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
+  // Show Dropdown Options
+  sizeOptions.onclick = function() {
+    console.log("Size Options");
+  };
+
+
   // Show Pupup
   function openPopup(product) {
     popupTitle.textContent = product.title;
