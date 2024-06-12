@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function openPopup(product) {
 
     popupTitle.textContent = product.title;
-  
+    popupProductImage.innerHTML = product.image['src'];
 
 
     
