@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
           openPopup(data.product);
-          console.log(data.product);
+          //console.log(data.product);
         })
         .catch(error => {
           console.error('Error fetching product:', error);
