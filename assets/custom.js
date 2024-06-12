@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeButton = document.querySelector('.popup .close');
 
   const dbSizeButton = document.querySelector('.db-size');
-  const dropdownSize = document.querySelector('.dropdown-size .db-options');
+  const dropdownSize = document.querySelector('.db-options');
   
 
   // Close Popup
