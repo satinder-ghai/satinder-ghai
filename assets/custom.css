@@ -207,3 +207,19 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     top: 241px;
     right: 59px;
 }
+.tv-product-item:nth-child(3) .plus-icon{
+    top: 83px;
+    right: 165px;
+}
+.tv-product-item:nth-child(4) .plus-icon{
+    top: 241px;
+    right: 59px;
+}
+.tv-product-item:nth-child(5) .plus-icon{
+    top: 241px;
+    right: 59px;
+}
+.tv-product-item:nth-child(6) .plus-icon{
+    top: 241px;
+    right: 59px;
+}
