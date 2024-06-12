@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
 
+  // Close Popup
+  sizeOptions.onclick = function() {
+    console.log("Show OPtions ");
+  };
+
   // Show Pupup
   function openPopup(product) {
     popupTitle.textContent = product.title;
