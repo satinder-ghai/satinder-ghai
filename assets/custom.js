@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           const dbSizeButton = document.createElement('button');
           dbSizeButton.className = 'db-size';
-          dbSizeButton.textContent = 'Choose your size';
+          dbSizeButton.textContent = 'Choose your size' + "<img src='https://cdn.shopify.com/s/files/1/0578/3945/2222/files/sel-arrow.png?v=1718190028'/>" ;
           dropdownSize.appendChild(dbSizeButton);
 
           const dbOptions = document.createElement('ul');
