@@ -574,6 +574,12 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     flex-direction: column;
     align-items: center;
 }
+.banner-mobile-image {
+    width: 100%;
+}
+.banner-mobile-image img {
+    width: 100%;
+}
 .banner.banner-mobile:after, .banner.banner-mobile:after{
 	display:none;
 }
@@ -685,5 +691,9 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 }
 .banner.banner-desktop{
   display:none;
+}
+.banner.banner-mobile {
+    display: flex;
+    flex-direction: column!important;
 }
 }
