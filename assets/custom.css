@@ -594,6 +594,33 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+.tv-product-item:first-child .plus-icon {
+    top: 180px;
+    right: 116px;
+}
+  .tv-product-item:nth-child(3) .plus-icon {
+    top: 60px;
+    right: 105px;
+}
+.tv-product-item:nth-child(2) .plus-icon {
+    top: 155px;
+    right: 33px;
+}
+.tv-product-item:nth-child(4) .plus-icon {
+    top: 43px;
+    right: 75px;
+}
+.tv-product-item:nth-child(5) .plus-icon {
+    top: 73px;
+    right: 143px;
+}
+.tv-product-item:nth-child(6) .plus-icon {
+    top: 115px;
+    right: 66px;
+}ß
+}
+
 @media only screen and (max-width: 750px) {
   .tv-container {
     justify-content: normal;
