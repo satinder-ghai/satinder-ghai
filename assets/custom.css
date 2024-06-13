@@ -583,11 +583,11 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     padding-right: 50px;
 }
 }
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
     .banner.banner--large:not(.banner--adapt) {
         min-height: 300px;
     }
-}
+} */
 @media screen and (min-width: 1199px) {
     .banner.banner--large:not(.banner--adapt) {
         min-height: 72rem;
