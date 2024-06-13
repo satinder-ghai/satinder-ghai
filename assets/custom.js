@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const optionsContainer = document.getElementById('options-container');
     // Clear any existing content in the options container
     optionsContainer.innerHTML = '';
-
+    sizeOPtions.innerHTML = '';
+    
     // Iterate over each option and create the necessary HTML elements
     options.forEach((option, index) => {
       // Create a container for each option
