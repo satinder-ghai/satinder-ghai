@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         option.values.forEach(value => {
           const dbOptionItem = document.createElement('div');
-          dbOptionItem.className = 'size-option';
+          dbOptionItem.className = 'custom-option';
           dbOptionItem.textContent = value;
-          dbOptionItem.setAttribute('data-value', value);
+          dbOptionItem.setAttribute('data-value', 'option1');
           sizeOPtions.appendChild(dbOptionItem);
         });
       }
