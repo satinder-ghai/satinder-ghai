@@ -52,7 +52,10 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "mobile_banner_image": "shopify:\/\/shop_images\/mobile-banner.svg",
+        "mobile_heading": "The Gift Guide",
+        "mobile_text": "Discover Joy: Your Ultimate Holiday Gift Destination."
       }
     },
     "custom_featured_collection_4xnEVA": {
