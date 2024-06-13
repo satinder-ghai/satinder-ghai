@@ -405,9 +405,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     width: 100%;
 }
 
-.size-var {
-    margin-bottom: 50px;
-}
 .size-var .sel-siz {
     width: 100%;
     height: 40.44px;
