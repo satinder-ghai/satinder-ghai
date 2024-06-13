@@ -593,7 +593,11 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
         min-height: 72rem;
     }
 }
-
+@media only screen and (max-width: 1024px) {
+  .banner .banner__heading {
+    font-size: 50px;
+}
+}
 @media only screen and (max-width: 1024px) {
 .tv-product-item:first-child .plus-icon {
     top: 180px;
