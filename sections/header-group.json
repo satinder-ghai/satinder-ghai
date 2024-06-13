@@ -42,7 +42,7 @@
           "type": "button",
           "settings": {
             "button_text": "CHOOSE GIFT",
-            "button_url": "#",
+            "button_url": "\/cart",
             "button_icon": "shopify:\/\/shop_images\/tv-arrow.svg",
             "icon_width": 26
           }
