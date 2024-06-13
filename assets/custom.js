@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         dropdownSize.appendChild(dbOptions);
-        optionContainer.appendChild(dropdownSize);
       }
 
       
