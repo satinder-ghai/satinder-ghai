@@ -77,7 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
         dbOptions.className = 'custom-options';
 
         option.values.forEach(value => {
-          const dbOptionItem = document.createElement('li');
+          const dbOptionItem = document.createElement('div');
+          dbOptionItem.className = 'custom-option';
           dbOptionItem.textContent = value;
           dbOptions.appendChild(dbOptionItem);
         });
