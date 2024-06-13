@@ -666,7 +666,13 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     line-height: 20px;
     padding: 10px 12px;
 }
-.tv-product-item a.plus-icon {
+.tv-product-item:first-child .plus-icon,
+.tv-product-item:nth-child(2) .plus-icon,
+.tv-product-item:nth-child(3) .plus-icon,
+.tv-product-item:nth-child(4) .plus-icon,
+.tv-product-item:nth-child(5) .plus-icon,
+.tv-product-item:nth-child(6) .plus-icon,
+  {
     top: 0;
 }
 }
