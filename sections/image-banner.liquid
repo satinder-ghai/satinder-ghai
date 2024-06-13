@@ -66,10 +66,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'buttons' -%}
-              <div
-                class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-                {{ block.shopify_attributes }}
-              >
+              
                 {%- if block.settings.button_label_1 != blank -%}
                   <a
                     {% if block.settings.button_link_1 == blank %}
@@ -77,7 +74,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                    class="button button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                   >
                     {{- block.settings.button_label_1 | escape -}} <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/tv-arrow.svg?v=1717137572" alt="Arrow icon">
                   </a>
@@ -94,7 +91,7 @@
                     {{- block.settings.button_label_2 | escape -}}
                   </a>
                 {%- endif -%}
-              </div>
+              
           {%- endcase -%}
         {%- endfor -%}
       </div>
