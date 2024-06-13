@@ -50,7 +50,7 @@
     assign fetch_priority = 'high'
   endif
 -%}
-
+<!-- Mobile banner section -->
 {%- if section.settings.mobile_banner_image != blank -%}
     <div class="banner banner-mobile">
       <h2 class="banner__heading inline-richtext h0">
@@ -97,9 +97,9 @@
       </div>
     </div>
 {% endif %}
+<!-- End conditional check for mobile banner image -->
 
-
-
+<!-- Desktop banner section -->
 <div
   id="Banner-{{ section.id }}"
   class="banner banner-desktop banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
