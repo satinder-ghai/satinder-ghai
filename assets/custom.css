@@ -567,6 +567,9 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .banner .media>img {
     object-position: 0px center;
 }
+.banner-mobile{
+  display:none;
+}
 .banner.banner-mobile {
     flex-direction: column;
     align-items: center;
