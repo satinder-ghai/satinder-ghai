@@ -671,7 +671,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 .tv-product-item:nth-child(3) .plus-icon,
 .tv-product-item:nth-child(4) .plus-icon,
 .tv-product-item:nth-child(5) .plus-icon,
-.tv-product-item:nth-child(6) .plus-icon,
+.tv-product-item:nth-child(6) .plus-icon
   {
     top: 0;
 }
