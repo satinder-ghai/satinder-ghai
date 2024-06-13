@@ -64,13 +64,12 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (index === 1) {
         // Create a dropdown for the second option (e.g., size)
         const dropdownSize = document.createElement('div');
-        dropdownSize.className = 'dropdown-size';
+        dropdownSize.className = 'custom-select-wrapper';
 
         // Create and append the dropdown button
-        const dbSizeButton = document.createElement('button');
-        dbSizeButton.className = 'db-size';
-        dbSizeButton.id = 'size-options';
-        dbSizeButton.innerHTML = 'Choose your size' + "<img src='https://cdn.shopify.com/s/files/1/0578/3945/2222/files/sel-arrow.png?v=1718190028'/>";
+        const dbSizeButton = document.createElement('div');
+        dbSizeButton.className = 'custom-select';
+        dbSizeButton.innerHTML = '<div class="custom-select-trigger"><span>S</span><span class="arrow"><img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/down-arrow.svg?v=1717415682" alt="icon"></span></div>';
         dropdownSize.appendChild(dbSizeButton);
 
         // Create and append the dropdown options
