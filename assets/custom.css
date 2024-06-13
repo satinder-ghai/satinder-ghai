@@ -509,6 +509,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
             padding: 10px;
             height: 40px;
             width: 100%;
+            letter-spacing: 0;
         }
 
         .custom-select-trigger .arrow {
