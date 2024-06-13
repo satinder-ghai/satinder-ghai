@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdownSize.appendChild(dbSizeButton);
 
         // Create and append the dropdown options
-        const dbOptions = document.createElement('ul');
+        const dbOptions = document.createElement('div');
         dbOptions.className = 'custom-options';
 
         option.values.forEach(value => {
