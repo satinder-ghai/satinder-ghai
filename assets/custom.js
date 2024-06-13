@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
           dbOptions.appendChild(dbOptionItem);
         });
 
-        dropdownSize.appendChild(dbOptions);
+        dbSizeButton.appendChild(dbOptions);
         optionContainer.appendChild(dropdownSize);
       }
 
