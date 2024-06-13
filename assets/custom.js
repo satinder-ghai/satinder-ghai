@@ -41,15 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const optionContainer = document.createElement('div');
       optionContainer.className = 'popup-variants ' + option.name.toLowerCase().replace(/\s+/g, '-') +'-var';
 
-
-      if (index === 0) {
-        
       // Create and append the option name element
       const optionNameElement = document.createElement('div');
       optionNameElement.className = 'cp-label';
       optionNameElement.textContent = `${option.name}`;
       optionContainer.appendChild(optionNameElement);
-        
+
+      if (index === 0) {
         // Create a container for the first option values (e.g., buttons)
         const varCon = document.createElement('div');
         varCon.className = 'var-con';
