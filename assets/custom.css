@@ -596,9 +596,10 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     }
 }
 @media only screen and (max-width: 1199px) {
-  /* .banner .banner__heading {
+ .banner .banner__heading {
     font-size: 50px;
 }
+ /* 
 .banner .tvs-container {
     padding-left: 15px;
     padding-right: 15px;
