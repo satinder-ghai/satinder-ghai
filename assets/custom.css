@@ -176,12 +176,12 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     position: relative;
 }
 .tv-product-item .product-image {
-    cursor: pointer;
     width: 100%;
 }
 .tv-product-item .plus-icon {
     width: 22px;
     position: absolute;
+    cursor: pointer;
 }
 .tv-product-item:first-child .plus-icon {
     top: 260px;
