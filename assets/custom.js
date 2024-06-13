@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         option.values.forEach(value => {
           const dbOptionItem = document.createElement('div');
-          dbOptionItem.className = 'custom-option';
+          dbOptionItem.className = 'size-option';
           dbOptionItem.textContent = value;
           dbOptionItem.setAttribute('data-value', value);
           sizeOPtions.appendChild(dbOptionItem);
