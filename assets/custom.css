@@ -579,6 +579,10 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     flex-direction: column;
     align-items: center;
 }
+.banner.banner-mobile h2.banner__heading {
+    font-size: 30px;
+    line-height: 44px;
+}
 .banner.banner-mobile .banner-mobile-txt {
     font-family: Jost;
     font-size: 16px;
