@@ -53,32 +53,69 @@
 
 <!-- POPUP HTML CODE START | DATA APPENDING FROM CUSTOM.JS THROUGH API -->
 <div id="product-popup" class="popup hidden tv-model">
+  
+  <!-- Popup content container -->
   <div class="popup-content">
+    
+    <!-- Close button for the popup -->
     <span class="close">&times;</span>
+    
+    <!-- Container for product details -->
     <div class="product-detail">
+      
+      <!-- Container for product image -->
       <div class="cp-image" id="popup-product-image"></div>
+      
+      <!-- Container for product description and details -->
       <div class="cp-disc">
-        <h2 id="popup-title" class="cp-title"></h2> 
+        <!-- Product title -->
+        <h2 id="popup-title" class="cp-title"></h2>
+        <!-- Product price -->
         <p id="popup-price" class="cp-price"></p>
+        <!-- Product description -->
         <div id="popup-description" class="cp-desc"></div>
       </div>
+      
+    <!-- End container for product details -->
     </div>
-     <div id="options-container"></div>
+    
+    <!-- Container for additional options (e.g., product variants) -->
+    <div id="options-container"></div>
+    
+    <!-- Custom select dropdown for size selection -->
     <div class="custom-select-wrapper">
-        <div class="custom-select">
-            <div class="custom-select-trigger">
-                <span>Choose your size</span>
-              <span class="arrow">
-                <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/down-arrow.svg?v=1717415682" alt="icon">
-              </span>
-            </div>
-            <div class="custom-options" id="size-options">
-            </div>
+      <div class="custom-select">
+        
+        <!-- Trigger to open the custom select dropdown -->
+        <div class="custom-select-trigger">
+          <span>Choose your size</span>
+          <!-- Arrow icon for the dropdown -->
+          <span class="arrow">
+            <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/down-arrow.svg?v=1717415682" alt="icon">
+          </span>
         </div>
+        
+        <!-- Options for size selection, to be populated dynamically -->
+        <div class="custom-options" id="size-options"></div>
+        
+      <!-- End custom select dropdown -->
+      </div>
+      
+    <!-- End custom select wrapper -->
     </div>
-      <button id="add-to-cart" class="tv-btn" >Add to Cart <img src="//satinder-ghai-test.myshopify.com/cdn/shop/files/tv-arrow_449c9d31-ee63-479c-b936-c19d67b5891d.svg?v=1717220329" alt="{&quot;width&quot;=>26, &quot;alt&quot;=>nil}"></button>
+    
+    <!-- Add to Cart button -->
+    <button id="add-to-cart" class="tv-btn">
+      Add to Cart 
+      <img src="//satinder-ghai-test.myshopify.com/cdn/shop/files/tv-arrow_449c9d31-ee63-479c-b936-c19d67b5891d.svg?v=1717220329" alt="Arrow icon">
+    </button>
+    
+  <!-- End popup content container -->
   </div>
+  
+<!-- End popup container -->
 </div>
+
 
 
 
