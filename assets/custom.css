@@ -520,6 +520,12 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
             align-items: center;
             justify-content: center;
             border-left: 1px solid;
+            transition: 0.5s;
+        }
+
+        .custom-select-trigger .open .arrow {
+          transform: rotate(-180dwgß)
+          transition: 0.5s;
         }
 
         .custom-options {
@@ -546,7 +552,7 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
         .custom-option:hover {
             background: #000;
             color: #fff;
-            transition: 0.5s;ß
+            transition: 0.5s;
         }
 
         .custom-select.open .custom-options {
