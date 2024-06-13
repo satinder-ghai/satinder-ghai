@@ -520,7 +520,10 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
             align-items: center;
             justify-content: center;
             border-left: 1px solid;
-            transition: 0.5s;
+        }
+
+        .custom-select-trigger .arrow img {
+          transition: 0.5s;
         }
 
         .open .custom-select-trigger .arrow img {
