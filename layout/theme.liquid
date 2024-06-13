@@ -360,30 +360,29 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-          const selectWrapper = document.querySelector('.custom-select-wrapper');
-          const select = selectWrapper.querySelector('.custom-select');
-          const trigger = select.querySelector('.custom-select-trigger');
-          const options = select.querySelectorAll('.custom-option');
-          
-          trigger.addEventListener('click', function () {
-              select.classList.toggle('open');
+    const selectWrapper = document.querySelector('.custom-select-wrapper');
+    const select = selectWrapper.querySelector('.custom-select');
+    const trigger = select.querySelector('.custom-select-trigger');
 
-          });
-      
-          options.forEach(option => {
-              option.addEventListener('click', function () {
-                  trigger.querySelector('span').textContent = this.textContent;
-                  selectWrapper.querySelector('.custom-select').dataset.value = this.dataset.value;
-                  select.classList.remove('open');
-              });
-          });
-      
-          document.addEventListener('click', function (e) {
-              if (!select.contains(e.target)) {
-                  select.classList.remove('open');
-              }
-          });
-      });
+    trigger.addEventListener('click', function () {
+        select.classList.toggle('open');
+    });
+
+    select.addEventListener('click', function (e) {
+        if (e.target.classList.contains('custom-option')) {
+            trigger.querySelector('span').textContent = e.target.textContent;
+            selectWrapper.querySelector('.custom-select').dataset.value = e.target.dataset.value;
+            select.classList.remove('open');
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!select.contains(e.target) && !trigger.contains(e.target)) {
+            select.classList.remove('open');
+        }
+    });
+});
+
       
       </script>
 
