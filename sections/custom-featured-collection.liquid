@@ -1,26 +1,57 @@
+<!-- Container for the section with a custom margin top class and a specific container class -->
 <div class="mxt-90 tvs-container">
+  
+  <!-- Section title -->
   <h2 class="sec-title">
-      {{ section.settings.title }}
+    {{ section.settings.title }}
   </h2>
+  
+  <!-- Container for the list of products -->
   <div class="tv-product-list">
-      {% for block in section.blocks %}
-        {% if block.settings.product %}
-            {% assign product = all_products[block.settings.product] %}
-            {% if product %}
-              <div class="tv-product-item product-item">
-                 <img class="product-image" src="{{ product.featured_image | img_url: '434x444' }}" alt="{{ product.title }}">
-                <a class="plus-icon" data-product-id="{{ product.id }}">
-                  <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/plus-icon.svg?v=1717157287" alt="plus icon">
-                </a>
-              </div>
-            {% endif %}
-        {% endif %}  
-      {% endfor %}
+    
+    <!-- Loop through each block in section.blocks -->
+    {% for block in section.blocks %}
+      
+      <!-- Check if the block has a product assigned -->
+      {% if block.settings.product %}
+        
+        <!-- Get the product object from all_products using the product handle -->
+        {% assign product = all_products[block.settings.product] %}
+        
+        <!-- Check if the product exists -->
+        {% if product %}
+          
+          <!-- Product item container -->
+          <div class="tv-product-item product-item">
+            
+            <!-- Product image -->
+            <img class="product-image" src="{{ product.featured_image | img_url: '434x444' }}" alt="{{ product.title }}">
+            
+            <!-- Plus icon link with product ID data attribute -->
+            <a class="plus-icon" data-product-id="{{ product.id }}">
+              <img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/plus-icon.svg?v=1717157287" alt="plus icon">
+            </a>
+            
+          <!-- End product item container -->
+          </div>
+          
+        <!-- End check if product exists -->
+        {% endif %}
+        
+      <!-- End check if block has a product assigned -->
+      {% endif %}
+      
+    <!-- End loop through blocks -->
+    {% endfor %}
+    
+  <!-- End container for the list of products -->
   </div>
+  
+<!-- End container for the section -->
 </div>
 
 
-<!-- POPUP HTML CODE START -->
+<!-- POPUP HTML CODE START | DATA APPENDING FROM CUSTOM.JS THROUGH API -->
 <div id="product-popup" class="popup hidden tv-model">
   <div class="popup-content">
     <span class="close">&times;</span>
