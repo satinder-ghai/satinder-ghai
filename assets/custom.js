@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create and append the dropdown options
         const dbOptions = document.createElement('ul');
-        dbOptions.className = 'db-options';
+        dbOptions.className = 'custom-options';
 
         option.values.forEach(value => {
           const dbOptionItem = document.createElement('li');
