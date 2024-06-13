@@ -592,6 +592,10 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
     .banner.banner--large:not(.banner--adapt) {
         min-height: 72rem;
     }
+    .banner .tvs-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 }
 @media only screen and (max-width: 1199px) {
   .banner .banner__heading {
