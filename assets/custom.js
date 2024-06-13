@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create and append the dropdown button
         const dbSizeButton = document.createElement('div');
         dbSizeButton.className = 'custom-select';
-        dbSizeButton.innerHTML = '<div class="custom-select-trigger"><span>S</span><span class="arrow"><img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/down-arrow.svg?v=1717415682" alt="icon"></span></div>';
+        dbSizeButton.innerHTML = '<div class="custom-select-trigger"><span>Choose your size</span><span class="arrow"><img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/down-arrow.svg?v=1717415682" alt="icon"></span></div>';
         dropdownSize.appendChild(dbSizeButton);
 
         // Create and append the dropdown options
