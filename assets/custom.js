@@ -63,30 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         optionContainer.appendChild(varCon);
       } else if (index === 1) {
-        // Create a dropdown for the second option (e.g., size)
-        const dropdownSize = document.createElement('div');
-        dropdownSize.className = 'custom-select-wrapper';
-
-        // Create and append the dropdown button
-        const dbSizeButton = document.createElement('div');
-        dbSizeButton.className = 'custom-select';
-        dbSizeButton.innerHTML = '<div class="custom-select-trigger"><span>Choose your size</span><span class="arrow"><img src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/down-arrow.svg?v=1717415682" alt="icon"></span></div>';
-        dropdownSize.appendChild(dbSizeButton);
-
-        // Create and append the dropdown options
-        const dbOptions = document.createElement('div');
-        dbOptions.className = 'custom-options';
-
+        
         option.values.forEach(value => {
           const dbOptionItem = document.createElement('div');
           dbOptionItem.className = 'custom-option';
           dbOptionItem.textContent = value;
-          dbOptionItem.setAttribute('data-value', 'option1');
+          dbOptionItem.setAttribute('data-value', value);
           sizeOPtions.appendChild(dbOptionItem);
         });
-
-        dbSizeButton.appendChild(dbOptions);
-        optionContainer.appendChild(dropdownSize);
       }
 
       // Append the option container to the main options container
