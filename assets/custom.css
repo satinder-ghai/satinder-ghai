@@ -537,12 +537,13 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
         }
 
         .custom-option {
-            padding: 10px;
+            padding: 2px 10px;
             cursor: pointer;
+            font-size: 14px;
         }
 
         .custom-option:hover {
-            background: #f0f0f0;
+            background: #000;
         }
 
         .custom-select.open .custom-options {
