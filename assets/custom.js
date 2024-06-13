@@ -9,6 +9,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const sizeOPtions = document.getElementById('size-options');
   const closeButton = document.querySelector('.popup .close');
 
+  // Get references to the Size option elements
+  const selectWrapper = document.querySelector('.custom-select-wrapper');
+  const select = selectWrapper.querySelector('.custom-select');
+  const trigger = select.querySelector('.custom-select-trigger');
+
+  // Toggle the Size Options when clicked
+  trigger.addEventListener('click', function () {
+        select.classList.toggle('open');
+    });
+  // Select the Size Options when clicked
+  select.addEventListener('click', function (e) {
+      if (e.target.classList.contains('custom-option')) {
+          trigger.querySelector('span').textContent = e.target.textContent;
+          selectWrapper.querySelector('.custom-select').dataset.value = e.target.dataset.value;
+          select.classList.remove('open');
+      }
+  });
+   // Hide the Size Options when clicked
+  document.addEventListener('click', function (e) {
+      if (!select.contains(e.target) && !trigger.contains(e.target)) {
+          select.classList.remove('open');
+      }
+  });
+
+  
+
   // Close the popup when the close button is clicked
   closeButton.onclick = function() {
     popup.classList.add('hidden');

@@ -358,33 +358,7 @@
       };
     </script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-    const selectWrapper = document.querySelector('.custom-select-wrapper');
-    const select = selectWrapper.querySelector('.custom-select');
-    const trigger = select.querySelector('.custom-select-trigger');
-
-    trigger.addEventListener('click', function () {
-        select.classList.toggle('open');
-    });
-
-    select.addEventListener('click', function (e) {
-        if (e.target.classList.contains('custom-option')) {
-            trigger.querySelector('span').textContent = e.target.textContent;
-            selectWrapper.querySelector('.custom-select').dataset.value = e.target.dataset.value;
-            select.classList.remove('open');
-        }
-    });
-
-    document.addEventListener('click', function (e) {
-        if (!select.contains(e.target) && !trigger.contains(e.target)) {
-            select.classList.remove('open');
-        }
-    });
-});
-
-      
-      </script>
+    
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
