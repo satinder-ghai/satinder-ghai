@@ -34,30 +34,62 @@
 {%- endstyle -%}
 
 
-<header class="tv-header header--mobile-{{ section.settings.mobile_logo_position }} color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<!-- Header section with dynamic classes for mobile logo position and color scheme -->
+<header class="tv-header header--mobile-{{ section.settings.mobile_logo_position }} color-{{ section.settings.color_scheme }} gradient
+  {%- if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+  
+  <!-- Container for header content -->
   <div class="tv-container"> 
+    <!-- Hamburger icon for mobile menu -->
     <img class="mm-icon" src="https://cdn.shopify.com/s/files/1/0578/3945/2222/files/hamburger-icon.svg?v=1717408683" alt="Hamburger icon">
+    
+    <!-- Loop through each block in section.blocks -->
     {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'Logo' -%}
-              
-             <a href="{{ shop.url }}" class="logo"> 
-               {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
-              {{ block.settings.logo | image_url: width: 600 | image_tag:
-                class: 'header__heading-logo motion-reduce',
-                width: block.settings.logo_width,
-                alt: logo_alt,
-                preload: true
-              }}</a>
-          {%- when 'text' -%}
-             <div class="tvh-txt" {{ block.shopify_attributes }}> {{ block.settings.tag_content }} </div>
-          {%- when 'button' -%}
-              <a href="{{ block.settings.button_url }}" class="tv-btn"> {{ block.settings.button_text }} {{ block.settings.button_icon | img_url: 'master' | img_tag: width: block.settings.icon_width,
-                alt: block.settings.button_icon.alt }} </a>
-        {%- endcase -%}
-      {%- endfor -%}
+      
+      <!-- Switch case to handle different block types -->
+      {%- case block.type -%}
+        
+        <!-- Case for 'Logo' block type -->
+        {%- when 'Logo' -%}
+          <a href="{{ shop.url }}" class="logo"> 
+            {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
+            <!-- Render logo image with specified settings -->
+            {{ block.settings.logo | image_url: width: 600 | image_tag:
+              class: 'header__heading-logo motion-reduce',
+              width: block.settings.logo_width,
+              alt: logo_alt,
+              preload: true
+            }}
+          </a>
+        
+        {%- when 'text' -%}
+          <!-- Display text content with Shopify attributes -->
+          <div class="tvh-txt" {{ block.shopify_attributes }}> 
+            {{ block.settings.tag_content }} 
+          </div>
+        
+        {%- when 'button' -%}
+          <!-- Button link with text and optional icon -->
+          <a href="{{ block.settings.button_url }}" class="tv-btn"> 
+            {{ block.settings.button_text }} 
+            {{ block.settings.button_icon | img_url: 'master' | img_tag: 
+              width: block.settings.icon_width,
+              alt: block.settings.button_icon.alt 
+            }} 
+          </a>
+          
+      <!-- End switch case -->
+      {%- endcase -%}
+      
+    <!-- End loop through blocks -->
+    {%- endfor -%}
+    
+  <!-- End container for header content -->
   </div>
+  
+<!-- End header section -->
 </header>
+
 
 {% schema %}
 {
