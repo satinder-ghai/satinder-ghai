@@ -372,7 +372,6 @@
       
           options.forEach(option => {
               option.addEventListener('click', function () {
-                alert("test");
                   trigger.querySelector('span').textContent = this.textContent;
                   selectWrapper.querySelector('.custom-select').dataset.value = this.dataset.value;
                   select.classList.remove('open');
