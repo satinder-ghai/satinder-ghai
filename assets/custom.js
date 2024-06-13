@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const dbOptionItem = document.createElement('div');
           dbOptionItem.className = 'custom-option';
           dbOptionItem.textContent = value;
-          dbOptionItem.setAttribute('data-value', value);
+          dbOptionItem.setAttribute('data-value', 'option1');
           dbOptions.appendChild(dbOptionItem);
         });
 
