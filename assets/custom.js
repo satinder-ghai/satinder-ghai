@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
           dbOptionItem.className = 'custom-option';
           dbOptionItem.textContent = value;
           dbOptionItem.setAttribute('data-value', value);
-          dropdownSize.appendChild(dbOptionItem);
+          dbOptions.appendChild(dbOptionItem);
         });
 
         dropdownSize.appendChild(dbOptions);
