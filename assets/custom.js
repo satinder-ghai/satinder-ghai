@@ -37,18 +37,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Iterate over each option and create the necessary HTML elements
     options.forEach((option, index) => {
-      
-
-      if (index === 0) {
-        // Create a container for each option
+      // Create a container for each option
       const optionContainer = document.createElement('div');
       optionContainer.className = 'popup-variants ' + option.name.toLowerCase().replace(/\s+/g, '-') +'-var';
 
-        // Create and append the option name element
-        const optionNameElement = document.createElement('div');
-        optionNameElement.className = 'cp-label';
-        optionNameElement.textContent = `${option.name}`;
-        optionContainer.appendChild(optionNameElement);
+      // Create and append the option name element
+      const optionNameElement = document.createElement('div');
+      optionNameElement.className = 'cp-label';
+      optionNameElement.textContent = `${option.name}`;
+      optionContainer.appendChild(optionNameElement);
+
+      if (index === 0) {
         // Create a container for the first option values (e.g., buttons)
         const varCon = document.createElement('div');
         varCon.className = 'var-con';
@@ -62,10 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         optionContainer.appendChild(varCon);
-
-
-        // Append the option container to the main options container
-        optionsContainer.appendChild(optionContainer);
       } else if (index === 1) {
         // Create a dropdown for the second option (e.g., size)
         const dropdownSize = document.createElement('div');
@@ -90,9 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         dropdownSize.appendChild(dbOptions);
+        optionContainer.appendChild(dropdownSize);
       }
 
-      
+      // Append the option container to the main options container
+      optionsContainer.appendChild(optionContainer);
     });
 
     // Set the click event for the add to cart button
