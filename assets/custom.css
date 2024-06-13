@@ -491,7 +491,6 @@ body, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .link, .customer a {
 /* custom select */
 .custom-select-wrapper {
             position: relative;
-            display: inline-block;
             user-select: none;
         }
 
